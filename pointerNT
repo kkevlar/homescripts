@@ -1,0 +1,46 @@
+#!/bin/bash
+ARG=2
+PID=$(xinput | grep "TouchPad" | perl -pe 's/.*id=([^\s]+).*/$1/')
+ID=$PID
+
+case "$1" in
+    0|d|disabled|off|disable|no)
+	ARG=0;;
+    1|e|enabled|on|enable|yes)
+	ARG=1;;
+    2|t|toggle|switch)
+	ARG=2;;
+    p|pad|tp|touchpad|track|t|trackpad)
+	ID=$PID;;
+esac
+
+case "$2" in
+    0|d|disabled|off|disable|no)
+	ARG=0;;
+    1|e|enabled|on|enable|yes)
+	ARG=1;;
+    2|t|toggle|switch)
+	ARG=2;;
+    p|pad|tp|touchpad|track|t|trackpad)
+	ID=$PID;;
+esac
+
+mkdir -p .pointer
+
+if [ $ID == $PID ] ; then
+    LARG="$(cat .pointer/PID)"
+fi
+
+
+if [ $ARG == 2 -a $LARG == 1 ] ; then
+    ARG=0
+fi
+if [ $ARG == 2 ] ; then
+    ARG=1
+fi
+
+
+echo $ARG > .pointer/PID
+
+
+xinput set-prop $ID "Device Enabled" $ARG
