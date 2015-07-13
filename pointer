@@ -1,7 +1,7 @@
 #!/bin/bash
 ARG=2
-PID=$(xinput | grep "TouchPad" | awk '{print $6}' | perl -pe 's/id=//')
-SID=$(xinput | grep "Touchscreen" | awk '{print $5}' | perl -pe 's/id=//')
+PID=$(xinput | grep "TouchPad" | perl -pe 's/.*id=([^\s]+).*/$1/')
+SID=$(xinput | grep "Touchscreen" | perl -pe 's/.*id=([^\s]+).*/$1/')
 ID=$PID
 
 case "$1" in
