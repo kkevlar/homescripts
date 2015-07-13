@@ -1,9 +1,0 @@
-#!/bin/bash
-cd burn
-rm -rf $HOME/.config/xfce4
-cp -rf xfce4 $HOME/.config/xfce4
-rm -rf $HOME/.scripts
-cp -rf scripts $HOME/.scripts
-cp profile $HOME/.profile
-sudo cp $HOME/.scripts/kevlar /bin/kevlar
-sudo chmod 777 /bin/kevlar

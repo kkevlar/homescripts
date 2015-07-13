@@ -1,7 +1,0 @@
-#!/bin/bash
-PLACE=$1
-case $1 in
-w|ws|workspace)
-PLACE="$WUSER/Documents/"Eclipse Mars"/workspace/"
-esac
-thunar $PLACE
