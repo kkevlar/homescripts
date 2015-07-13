@@ -2,6 +2,4 @@
 bash unburn
 bash $HOME/.scripts/installscripts/update
 bash $HOME/.scripts/installscripts/chrome
-bash $HOME/.scripts/installscripts/skype
 bash $HOME/.scripts/installscripts/oneliners
-bash $HOME/.scripts/installscripts/downloads

@@ -1,0 +1,8 @@
+#!/bin/bash
+EMARS=$WUSER"Documents/Eclipse Mars"
+BUILDS=$EMARS/builds
+mkdir -p $BUILDS
+echo $EMARS
+echo $BUILDS
+OUT=$("$EMARS")/$1.jar
+cp $HOME/Documents/temp/*.jar $OUT
