@@ -4,56 +4,56 @@ PID=$(xinput | grep "TouchPad" | awk '{print $6}' | perl -pe 's/id=//')
 SID=$(xinput | grep "Touchscreen" | awk '{print $5}' | perl -pe 's/id=//')
 ID=$PID
 
-case $1 in
-0|d|disabled|off|disable|no)
-ARG=0;;
-1|e|enabled|on|enable|yes)
-ARG=1;;
-2|t|toggle|switch)
-ARG=2;;
-s|ts|screen|touch|touchscreen)
-ID=$SID;;
-p|pad|tp|touchpad|track|t|trackpad)
-ID=$PID;;
+case "$1" in
+    0|d|disabled|off|disable|no)
+	ARG=0;;
+    1|e|enabled|on|enable|yes)
+	ARG=1;;
+    2|t|toggle|switch)
+	ARG=2;;
+    s|ts|screen|touch|touchscreen)
+	ID=$SID;;
+    p|pad|tp|touchpad|track|t|trackpad)
+	ID=$PID;;
 esac
 
-case $2 in
-0|d|disabled|off|disable|no)
-ARG=0;;
-1|e|enabled|on|enable|yes)
-ARG=1;;
-2|t|toggle|switch)
-ARG=2;;
-s|ts|screen|touch|touchscreen)
-ID=$SID;;
-p|pad|tp|touchpad|track|t|trackpad)
-ID=$PID;;
+case "$2" in
+    0|d|disabled|off|disable|no)
+	ARG=0;;
+    1|e|enabled|on|enable|yes)
+	ARG=1;;
+    2|t|toggle|switch)
+	ARG=2;;
+    s|ts|screen|touch|touchscreen)
+	ID=$SID;;
+    p|pad|tp|touchpad|track|t|trackpad)
+	ID=$PID;;
 esac
 
 mkdir -p .pointer
 
 if [ $ID == $PID ] ; then
-LARG="$(cat .pointer/PID)"
+    LARG="$(cat .pointer/PID)"
 fi
 if [ $ID == $SID ] ; then
-LARG="$(cat .pointer/SID)"
+    LARG="$(cat .pointer/SID)"
 fi
-
 
 
 if [ $ARG == 2 -a $LARG == 1 ] ; then
-ARG=0
+    ARG=0
+fi
+if [ $ARG == 2 ] ; then
+    ARG=1
 fi
 
-if [ $ARG == 2 ] ; then
-ARG=1
-fi
 
 if [ $ID == $PID ] ; then
-echo $ARG > .pointer/PID
+    echo $ARG > .pointer/PID
 fi
 if [ $ID == $SID ] ; then
-echo $ARG > .pointer/SID
+    echo $ARG > .pointer/SID
 fi
+
 
 xinput set-prop $ID "Device Enabled" $ARG
