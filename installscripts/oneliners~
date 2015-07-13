@@ -1,0 +1,6 @@
+sudo apt-get update 
+sudo apt-get install p7zip-full
+sudo apt-get install default-jdk
+sudo apt-get install emacs
+sudo apt-get install gedit
+sudo apt-get install git
