@@ -2,6 +2,6 @@
 PLACE=$1
 case $1 in
 w|ws|workspace)
-PLACE="$WUSER/Documents/EclipseMars/workspace/"
+PLACE="$WUSER/Documents/EclipseMars/workspaceLin/"
 esac
 thunar $PLACE
