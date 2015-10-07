@@ -1,0 +1,13 @@
+#!/bin/bash
+killall xbindkeys
+if [ $1 == "revert" ] 
+then
+echo $HOME/.xbindtemp > $HOME/.xbindkeysrc
+xbindkeys
+exit
+fi
+cat $HOME/.xbindkeysrc > $HOME/.xbindtemp
+echo \" "(" "$@" ")" \" >> .xbindkeysrc
+xbindkeys -k | sed -n 5,6p >> .xbindkeysrc
+xbindkeys
+

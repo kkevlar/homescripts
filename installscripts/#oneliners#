@@ -1,0 +1,14 @@
+sudo apt-get update
+sudo apt-get -y install p7zip-full
+sudo apt-get -y install default-jdk
+sudo apt-get -y install emacs
+sudo apt-get -y install gedit
+sudo apt-get -y install git
+sudo apt-get -y install audacity
+sudo apt-get -y install vlc
+sudo apt-get -y install libreoffice
+sudo apt-get -y install openshot
+sudo apt-get -y install lame
+sudo apt-get install -y xbindkeys
+bash getsyncthing
+bash spotify
