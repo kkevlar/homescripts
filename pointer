@@ -50,6 +50,9 @@ fi
 
 if [ $ID == $PID ] ; then
     echo $ARG > .pointer/PID
+    if [ $ARG == 0 ] ; then
+	xdotool mousemove 1920 1080
+	fi
 fi
 if [ $ID == $SID ] ; then
     echo $ARG > .pointer/SID
