@@ -74,3 +74,9 @@
 " ( google-chrome ) "
     m:0xd + c:42
     Control+Shift+Alt + g
+" ( thunar ) "
+    m:0xd + c:28
+    Control+Shift+Alt + t
+" ( emacs ) "
+    m:0xd + c:26
+    Control+Shift+Alt + e

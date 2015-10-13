@@ -9,11 +9,11 @@ DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 killall xbindkeys
 if [ $1 == "revert" ] 
 then
-echo $DIR/.xbindtemp > $DIR/xbindkeysrc
+cat $DIR/.xbindtemp > $DIR/xbindkeysrc
 xbindkeys
 exit
 fi
-$(cat $DIR/xbindkeysrc) > $DIR/xbindtemp
+cat $DIR/xbindkeysrc > $DIR/.xbindtemp
 echo \" "(" "$@" ")" \" >> $DIR/xbindkeysrc
 xbindkeys -k | sed -n 5,6p >> $DIR/xbindkeysrc
 xbindkeys
