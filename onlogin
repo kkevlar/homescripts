@@ -1,4 +1,0 @@
-#!/bin/bash
-kevlar pointer trackpad disable
-kevlar pointer touchscreen disable
-
