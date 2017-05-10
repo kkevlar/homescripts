@@ -1,5 +1,5 @@
 #!/bin/bash
-curl -o SMC.jar "https://docs.google.com/uc?id=0B5_wYgbEk-GZOUY5X2lHVURTLUk&export=download"
+curl -L -o SM.jar "https://docs.google.com/uc?id=0B5_wYgbEk-GZOUY5X2lHVURTLUk&export=download"^C
 
 chmod a+x SMC.jar
 
