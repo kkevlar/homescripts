@@ -3,6 +3,8 @@
 # Google Drive direct download of big files
 # ./gdown.pl 'gdrive file url' ['desired file name']
 #
+#
+# $subject =~ s!https://drive\.google\.com/file/d/(.*?)/.*?\?usp=sharing!https://drive.google.com/uc?export=download&id=$1!g;
 # v1.0 by circulosmeos 04-2014.
 # http://circulosmeos.wordpress.com/2014/04/12/google-drive-direct-download-of-big-files
 #

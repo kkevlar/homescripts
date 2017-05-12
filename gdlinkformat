@@ -1,0 +1,5 @@
+#!/usr/bin/python
+
+import re
+import sys
+print re.sub(r"https://drive\.google\.com/file/d/(.*?)/.*?\?usp=sharing", r"https://drive.google.com/uc?export=download&id=\1", sys.argv[1])

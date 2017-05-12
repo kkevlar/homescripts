@@ -1,0 +1,6 @@
+#!/bin/sh
+
+
+OUTPUT="$(gdlinkformat $1)"
+
+perl /home/kevlar/.scripts/gdown.pl $OUTPUT $2
