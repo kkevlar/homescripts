@@ -1,5 +1,6 @@
 #include "cpTime.h"
 #include <stdio.h>
+#include <stdbool.h>
 
 #if defined __linux
 	#include <sys/time.h>
