@@ -1,0 +1,8 @@
+[
+	{ "keys": ["ctrl+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["ctrl+b"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true} },
+	{ "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+	{ "keys": ["ctrl+shift+e"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+]
