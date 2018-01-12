@@ -1,6 +1,5 @@
 // These settings override both User and Default settings for the Markdown syntax
 {
 	"color_scheme": "Packages/Color Scheme - Default/Breakers.tmTheme",
-	"font_face": "Arial",
-	"font_size": 22
+	"font_size": 16,
 }

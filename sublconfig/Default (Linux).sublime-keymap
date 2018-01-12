@@ -11,6 +11,8 @@
 	{ "keys": ["ctrl+shift+e"], "command": "move_to", "args": {"to": "eol", "extend": true} },
 	{ "keys": ["ctrl+shift+r"], "command": "move_to", "args": {"to": "bol", "extend": true} },
 	{ "keys": ["ctrl+r"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+
 	{ "keys": ["ctrl+j"], "command": "right_delete" },
+	{ "keys": ["ctrl+shift+j"], "command": "left_delete" },
 
 ]

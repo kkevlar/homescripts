@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the LaTeX syntax
+{
+	"color_scheme": "Packages/Color Scheme - Default/Breakers.tmTheme",
+	"font_face": "Noto Serif Georgian",
+	"font_size": 14,
+	"line_numbers": false
+}
