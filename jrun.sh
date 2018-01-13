@@ -1,4 +1,6 @@
+#!/bin/sh
+
 javac -cp ~/junitfiles/*:. *.java
-java -cp ~/junitfiles/*:. org.junit.runner.JUnitCore TestCases
+java -cp ~/junitfiles/*:. org.junit.runner.JUnitCore $1
 rm *.class
 
