@@ -4,3 +4,10 @@ wget -O ~/junitfiles/ham.jar http://www.csc.calpoly.edu/~phatalsk/public/jar/ham
 
 wget https://raw.githubusercontent.com/kkevlar/homescripts/master/jrun.sh
 
+echo jrun.sh > "#!/bin/sh"
+echo jrun.sh >> "javac -cp ~/junitfiles/*:. *.java"
+echo jrun.sh >> "java -cp ~/junitfiles/*:. org.junit.runner.JUnitCore $1"
+echo jrun.sh >> "rm *.class"
+
+echo ""
+echo "DONE"
