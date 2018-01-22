@@ -6,7 +6,7 @@ wget https://raw.githubusercontent.com/kkevlar/homescripts/master/jrun.sh
 
 echo "#!/bin/sh" > jrun.sh 
 echo "javac -cp ~/junitfiles/*:. *.java" >> jrun.sh 
-echo "java -cp ~/junitfiles/*:. org.junit.runner.JUnitCore $1" >>jrun.sh 
+echo "java -cp ~/junitfiles/*:. org.junit.runner.JUnitCore \$1" >>jrun.sh 
 echo "rm *.class">>jrun.sh 
 
 echo ""
