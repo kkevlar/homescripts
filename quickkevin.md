@@ -1,7 +1,7 @@
 
-[auto](https://drive.google.com/file/d/1DDs5EyQ_-ru5ERMHunbjqyhncNQw88nU/view?usp=sharing)
+[rec memo](https://drive.google.com/file/d/1P4--MZdS56rJ3UP6Cv5rf3gZLznQ9ucs/view?usp=sharing)
 
-[proposal draft](https://drive.google.com/file/d/1_TJSsJq4XpLX0Pdk9SAaA1-S3Y_2P12F/view?usp=sharing)
+[rec report](https://drive.google.com/file/d/15AQ1bMTEjskpiZBCwpQ9pTGjEsOB9lvY/view?usp=sharing)
 
-[letter](https://drive.google.com/open?id=1iO_SsMcvQLeAvPp_u0VCFGqD8xfZV-g9)
+[bjorn](https://drive.google.com/file/d/1JB7QxjNi0OIDMxgjiKtTyHedRZtE-NZH/view?usp=sharing)
 
