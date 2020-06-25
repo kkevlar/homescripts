@@ -1,4 +1,3 @@
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -71,14 +70,18 @@ set shiftwidth=2  " (sw) width (in spaces) used in each step of autoindent (aswe
 set hlsearch
 
 imap jj <Esc>
-nmap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>
+"nnoremap <c-j> mm<Esc>O// clang-format on<Esc>ggO// clang-format off<Esc>`m
+"imap /cfo // clang-format on
+"imap /cff // clang-format off
+"nmap <c-s> :w<CR>
+"imap <c-s> <Esc>:w<CR>
 
-nnoremap <Leader>s :.,$s/\<<C-r><C-w>\>//gc<Left><Left><Left>
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+"nnoremap <Leader>s :.,$s/\<<C-r><C-w>\>//gc<Left><Left><Left>
+"vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 "inoremap <> <><Left>
 "inoremap () ()<Left>
 inoremap {} {}<Left><CR><CR><Up>
+inoremap :w<CR> <Esc>:w<CR>
 "inoremap [] []<Left>
 "inoremap "" ""<Left>
 "inoremap '' ''<Left>
@@ -87,10 +90,6 @@ nmap <Up>    <Nop>
 nmap <Down>  <Nop>
 nmap <Left>  <Nop>
 nmap <Right> <Nop>
-imap <Up>    <Nop>
-imap <Down>  <Nop>
-imap <Left>  <Nop>
-imap <Right> <Nop>
 map $ <Nop>
 map ^ <Nop>
 map { <Nop>
@@ -98,15 +97,16 @@ map } <Nop>
 noremap H     ^
 noremap L     $
 nnoremap Y y$
-nnoremap <c-f> :e %:h/
-nnoremap <c-g> :vertical sb <CR>
-nnoremap <c-j> :browse oldfiles <CR>
-nnoremap <c-k> :w <CR> :! clang-format -i % <CR>
-nnoremap <c-l> :source err.vim <CR>
-nnoremap <S-Left> :vertical resize -2 <CR>
-nnoremap <S-Right> :vertical resize +2 <CR>
-nnoremap <S-Up> :resize +2 <CR>
-nnoremap <S-Down> :resize -2 <CR>
+"nnoremap <C-j> mm<Esc>O// clang-format on<Esc>ggO// clang-format off<Esc>`m
+"nnoremap <c-f> :e %:h/
+"nnoremap <c-g> :vertical sb <CR>
+"nnoremap <c-j> :browse oldfiles <CR>
+"nnoremap <c-k> :w <CR> :! clang-format -i % <CR>
+"nnoremap <c-l> :source err.vim <CR>
+"nnoremap <S-Left> :vertical resize -2 <CR>
+"nnoremap <S-Right> :vertical resize +2 <CR>
+"nnoremap <S-Up> :resize +2 <CR>
+"nnoremap <S-Down> :resize -2 <CR>
 
 
 

@@ -1,0 +1,39 @@
+{
+    "window.zoomLevel": 0,
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "/home/kevlar/.vimrc",
+    "editor.autoClosingBrackets": "never",
+    // "workbench.colorTheme": "Solarized Light",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.wrappingIndent": "indent",
+    "vim.normalModeKeyBindingsNonRecursive": [
+       {
+          "before": ["<C-j>"],
+          "after": ["m", "m", "O", "/", "/", " ", "c", "l", "a", "n", "g", "-", "f", "o", "r", "m", "a", "t", " ", "o", "n", "<Esc>", "g","g", "O", "/", "/", " ", "c", "l", "a", "n", "g", "-", "f", "o", "r", "m", "a", "t", " ", "o", "f", "f", "<Esc>", "`", "m", ]
+        }
+      ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["/", "c", "f", "f"],
+            "after": ["/", "/"," ","c", "l", "a", "n", "g", "-", "f", "o", "r", "m", "a", "t", " ", "o", "f", "f"]
+        }
+        ,
+        {
+            "before": ["/", "c", "f", "o"],
+            "after": ["/", "/"," ","c", "l", "a", "n", "g", "-", "f", "o", "r", "m", "a", "t", " ", "o", "n"]
+        }
+        ,
+        {
+            "before": ["k", "k", ],
+            "after": ["_"] 
+        }
+        ,
+        {
+            "before": ["h", "h", ],
+            "after": ["("] 
+        }
+        ,
+   ], 
+   "update.mode": "none",
+}
