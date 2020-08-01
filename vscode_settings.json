@@ -1,12 +1,13 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 0.1,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "/home/kevlar/.vimrc",
     "editor.autoClosingBrackets": "never",
-    // "workbench.colorTheme": "Solarized Light",
+    "workbench.colorTheme": "Solarized Light",
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
     "editor.wrappingIndent": "indent",
+    "vim.useSystemClipboard": true,
     "vim.normalModeKeyBindingsNonRecursive": [
        {
           "before": ["<C-j>"],
